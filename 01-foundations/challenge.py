@@ -29,6 +29,9 @@ def conclude_step(state: ThinkingState):
 
 # TODO: Define a conditional function
 def check_quality(state: ThinkingState):
+    if state["quality"] == "Weak":
+        return "analyst"
+    return END
     # Return the name of the next node
     pass
 
